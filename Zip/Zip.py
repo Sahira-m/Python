@@ -10,7 +10,11 @@ f.write(
     "Here is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some textHere is some text"
 )
 f.close()
+# ZIP FILES
 comp_file = zipfile.ZipFile("comp_file.zip", "w")
 comp_file.write("new_file1.txt", compress_type=zipfile.ZIP_DEFLATED)
 comp_file.write("new_file2.txt", compress_type=zipfile.ZIP_DEFLATED)
 comp_file.close()
+# EXTRACT ZIP FOLDER
+zip_obj = zipfile.ZipFile("comp_file.zip", "r")
+zip_obj.extractall("extracted_content")

@@ -1,0 +1,5 @@
+installation package for web scraping
+1.pip install requests
+2.pip install lxml
+3.pip install bs4
+
