@@ -1,3 +1,4 @@
+from PIL import image
 import requests
 import bs4
 
